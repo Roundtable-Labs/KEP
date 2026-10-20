@@ -1,6 +1,14 @@
 # KEP
 
+Semester thesis for IS1 at Računarski fakultet, by Aleksa Andjelic and Stefan Mladic.
+
+Propagacija grešaka kernela kroz slojeve Transformer modela: vizualizacija i analiza numeričkih odstupanja
+
+## About
+
 Residual-stream / hook experiments on Qwen3 with TransformerLens 4 (`TransformerBridge`).
+
+The project captures every hook activation of a single forward pass of a model (a `Run`, see `kep/run.py`), together with the metadata needed to interpret it, and saves it as one self-describing `.safetensors` file. Two runs, for example a reference model and a reduced-precision one, can then be compared (`kep/compare.py`) to measure where and how much they diverge. A per-layer KL-divergence lens over the residual stream is computed from the captured run.
 
 ## Setup
 
