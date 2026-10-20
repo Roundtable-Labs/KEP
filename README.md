@@ -15,7 +15,7 @@ source ~/.zshrc
 ## Run
 
 ```sh
-uv run python qwen3-resid.py
+uv run python main.py
 ```
 
-Or open `qwen3-resid.py` in an editor that supports `# %%` cells.
+Or open `main.py` in an editor that supports `# %%` cells.
